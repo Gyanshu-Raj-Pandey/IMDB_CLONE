@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+
+  body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(54, 53, 53);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header{
+    position: relative;
+    width: 95%;
+    height: 95%; 
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 1px 20px -1px rgb(0, 0, 0);
+  }
+
+  header::before{
+   content: '';
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/money heist1.jpg' ) no-repeat center center/cover;
+    opacity: .9;
+    z-index: -1;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(180deg transparent #000 );
+     z-index: -1;
+
+ }
+
+
+ header video{
+    position: absolute;
+    width: 150%;
+    height: 190%;
+    top: -45%;
+    z-index: -1;
+ }
+
+ header nav {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+ }
+ header nav .logo_ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+ header nav .logo_ul img{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   }
+
+ header nav .logo_ul ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav .logo_ul ul li{
+padding: 3px 15px;   
+} 
+
+header nav .logo_ul ul li a {
+text-decoration: none;
+color: white;
+font-size: 12px;
+font-weight: bold;
+transition: .3s linear;
+} 
+ 
+header nav .logo_ul ul li a :hover{
+   color: rgb(251, 0, 0);
+}
+ 
+
+header nav .search_user{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+ 
+header nav .search_user input{
+   padding: 2px 1px;
+   border-radius: 20px;
+   border: none;
+   outline:none;
+   background: rgba(255, 255,255, .3);
+   margin: 20px;
+   
+}
+
+header nav .search_user input ::placeholder{
+
+   background: rgba(235, 5, 5, 0.3);
+  
+}
+ 
+header nav .search_user img{
+width: 40px;
+height: 40px ;
+border-radius:50% ; 
+margin:0px 80px 0px 0px  ; 
+}
+
+   header nav .search_user  .search {
+      position:absolute;
+      margin-top: 21px;
+      margin-right: 70px;
+      width: 320px;
+      height: 190px;
+      /* border: 1px solid white; */
+      right: 0;
+      top:40px;
+      z-index: 99999;
+      overflow-y: auto;
+   }
+
+   header nav .search_user  .search ::-webkit-scrollbar {
+      width: 1px;
+      background: rgba(255, 255,255, .3);
+      border-radius: 5px;
+      visibility: hidden;
+
+   }
+
+   header nav .search_user  .search ::-webkit-scrollbar-thumb {
+      width: 5px;
+      background: rgba(255, 255,255, .4);
+      border-radius: 5px;
+      visibility: hidden;
+
+   }
+
+
+   header nav .search_user  .search:hover::-webkit-scrollbar {
+    
+      visibility: hidden;
+
+   }
+
+   header nav .search_user  .search :hover:-webkit-scrollbar-thumb {
+   
+      visibility: hidden;
+
+   }
+
+
+ˇ header nav .search_user .search .card{
+   position:relative;
+   width: 100%;
+   height: 100%;
+   margin: 100px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+   padding: 100px 0px;
+   text-decoration: none;
+   display:none;
+  }
+
+  header nav .search_user  .search .card::before {
+   content: '';
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+    margin:0px 100px 0px 0px  ; 
+}
+
+header nav .search_user  .search .card img {
+  width: 28px;
+  height: 20%;
+  border-radius: 2px;
+  margin-left: 8px;
+  margin-top: 5px;
+  display: flex;
+
+}
+header nav .search_user  .search a{
+   text-decoration: none;
+   display: none;
+}
+header nav .search_user  .search .card .cont {
+   margin-top: -60px;
+margin-left: 50px;
+color: white;
+}
+header nav .search_user  .search .card .cont p {
+   margin-top: -19px;
+   font-size: 15px;
+   color: rgba(6, 6, 6, 0.8);
+}
+
+header nav .search_user  .search .card .cont h3{
+   font-size: 17px;
+   line-height: 25px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 250px;
+   color: #000;
+}
+header nav .search_user  .search .card .cont span{
+background-color: yellow;
+color: #000;
+padding: 0px 3px;
+margin: 0px 5px 10px;
+font-weight: 500;
+}
+
+header .content{
+   position: relative;
+   color: white;
+   margin-top: 50px;
+   padding-left: 50px;
+
+
+}
+
+header .content h1{
+font-size: 50px;
+color: rgba(48, 39, 39, 0.58);
+}
+header .content p{
+   font-size: 11px;
+   width: 350px;
+   word-break: break-all;
+
+   }
+
+   header .content .details{
+      display: flex;
+      align-items: center;
+      margin-top:10px ;
+      }
+
+      header .content .details h6{
+     color: rgba(255, 255,255, .8);
+     font-size: 10px;
+     margin-right: 10px;    
+   }
+
+   header .content .details h5{
+      color: rgba(14, 32, 231, 0.8);
+      font-size: 10px;
+      margin-right: 10px;    
+    }
+
+
+   header .content .details h4{
+      color: rgb(248, 248, 248);
+      font-size: 10px;
+      margin-right: 10px;    
+    }
+    
+    header .content .details h3{
+      color: rgb(248, 248, 248);
+      font-size: 10px;
+      margin-right: 10px;  
+      display: flex;
+      align-items: center;  
+    }
+
+    header .content .details span{
+      
+      background-color: yellow;
+      color: #000;
+      padding: 0px 0px;
+      margin: 5px;
+      font-weight: 500;
+   }
+    
+    header .content .details i{
+      
+      margin-right: 5px;
+
+   }
+
+   header .content .btns{
+      margin-top: 20px ;
+      display: flex;
+      align-items: center;
+
+    }
+       
+header .content .btns a{
+     padding: 8px 12px;
+     font-size: 15px;
+     font-weight: 600;
+    background: linear-gradient(90deg, #00bdff, #0079ff ) ;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+  animation: button 1s linear infinite;
+   }
+
+
+   @keyframes buttons {
+      0%{background: linear-gradient(0deg, #00bdff, #0079ff ) ;}
+      12%{background: linear-gradient(45deg, #00bdff, #0079ff ) ;}
+      24%{background: linear-gradient(95deg, #00bdff, #0079ff ) ;}
+      36%{background: linear-gradient(145deg, #00bdff, #0079ff ) ;}
+      48%{background: linear-gradient(195deg, #00bdff, #0079ff ) ;}
+      60%{background: linear-gradient(245deg, #00bdff, #0079ff ) ;}
+      72%{background: linear-gradient(295deg, #00bdff, #0079ff ) ;}
+      100%{background: linear-gradient(360deg, #00bdff, #0079ff ) ;}
+   
+   }
+
+
+   header .content .btns :hover{
+      color: rgb(0, 0, 0);
+    }
+
+
+   header section{
+      position: absolute;
+   width: 100%;
+   height: auto;
+   padding: 0px 50px;
+   bottom: 20px;
+   color: azure;
+
+   }
+
+header section .cards{
+position: relative;
+width: 95%;
+height: 200px;
+   /* border: 1px solid white; */
+margin-top:10px ;
+margin-left: -20px;
+display: flex;
+align-items: center;
+overflow-x: auto;
+scroll-behavior: smooth;
+}
+
+header section .cards::-webkit-scrollbar{
+  display: none;
+}
+
+header section .cards .card{
+   position: relative;
+min-width: 130px;
+height: 180px;
+/* border: 1px solid white; */
+border-radius: 8px;
+margin-right: 10px;
+background: #000;
+transition: .3s linear;
+
+
+}
+
+header section .cards .card .poster{
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   position: relative;
+
+}
+
+header section .cards .card:hover{
+  min-width: 300px;
+  overflow: hidden;
+}
+
+header section .cards .card .rest_card{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   left: 0;
+   top: 0;
+   z-index:99999;
+   opacity: 0;
+   transition:1s linear;
+
+}
+
+
+header section .cards .card .rest_card img{
+   
+   position: relative;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   z-index:-1;
+   
+}
+
+header section .cards .card .rest_card::after{
+   content: '';
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg transparent #000 );
+   
+    z-index: -1;
+   left: 0;
+   bottom: 0;
+}
+
+
+header section .cards .card .rest_card .cont{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    padding: 0px 20px;
+
+}
+
+header section .cards .card .rest_card .cont .sub{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: -20px;
+}
+
+header section .cards .card .rest_card .cont h4{
+  margin-bottom: -15px;
+  }
+
+  
+ 
+header section .cards .card .rest_card .cont .sub p{
+   font-size: 12px;
+   font-weight: 400;
+   color: rgba(255, 255,255, .7);
+   /* margin-right: 20px; */
+
+}
+
+
+header section .cards .card .rest_card .cont .sub h3{
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+
+}
+
+header section .cards .card .rest_card .cont .sub h3 span{
+   background-color: yellow;
+   color: #000;
+   padding: 0px 3px;
+   margin: 0px 5px 10px;
+   font-weight: 500;
+   border-radius: 2px;
+  
+   }
+
+   header section .cards .card .rest_card .cont .sub h3 i{
+     margin-right: 3px;
+      }
+
+   header section .cards .card:hover .rest_card {
+     opacity: 1;      
+   }
+   header section  .bi-chevron-left{
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      width: 25px;
+      height: 25px;
+      background: rgba(0, 0, 0, 0.3);
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   font-size: 12px;
+      cursor: pointer;
+      transition: .3s linear;
+      z-index: 9999999;   
+      opacity: 0;
+   }
+
+   header section  .bi-chevron-right{
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      width: 25px;
+      height: 25px;
+      background: rgba(5, 0, 0, 0.3);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 12px;
+      cursor: pointer;
+      transition: .3s linear;
+      margin-left: 1050px;
+      opacity: 0;
+   }
+
+   header section  .bi-chevron-right{
+       left: unset;
+      right: 8%; 
+   }
+
+   header section:hover  .bi-chevron-right{
+   opacity: 1;
+   }
+  header section:hover  .bi-chevron-left{
+   opacity: 1;
+}
+
+   
